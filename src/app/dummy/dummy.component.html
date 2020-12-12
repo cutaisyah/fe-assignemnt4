@@ -1,0 +1,83 @@
+<form class="register-form" [formGroup]="signUpForm">
+
+  <label>Email</label>
+  <div  class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus===true}">
+    <div class="input-group-prepend">
+      <span class="input-group-text">
+          <i class="nc-icon nc-email-85"></i>
+      </span>
+    </div>
+
+      <input formControlName="email" type="text" class="form-control" placeholder="Email" (focus)="focus=true" (blur)="focus=false" >
+  </div>
+
+  <label>Password</label>
+  <div  class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus1===true}">
+    <div class="input-group-prepend">
+      <span class="input-group-text">
+          <i class="nc-icon nc-key-25"></i>
+      </span>
+    </div>
+      <input formControlName="password" type="text" class="form-control" placeholder="Password" (focus)="focus1=true" (blur)="focus1=false" >
+  </div>
+
+  <label>username</label>
+  <div  class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus1===true}">
+    <div class="input-group-prepend">
+      <span class="input-group-text">
+          <i class="nc-icon nc-key-25"></i>
+      </span>
+    </div>
+      <input formControlName="username" type="text" class="form-control" placeholder="username" (focus)="focus1=true" (blur)="focus1=false" >
+  </div>
+
+  <label>birthdate</label>
+  <div  class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus1===true}">
+    <div class="input-group-prepend">
+      <span class="input-group-text">
+          <i class="nc-icon nc-key-25"></i>
+      </span>
+    </div>
+      <input formControlName="birthdate" type="date" class="form-control" placeholder="birthdate" (focus)="focus1=true" (blur)="focus1=false" >
+  </div>
+
+  <label>phone</label>
+  <div  class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus1===true}">
+    <div class="input-group\
+    -prepend">
+      <span class="input-group-text">
+          <i class="nc-icon nc-key-25"></i>
+      </span>
+    </div>
+      <input formControlName="phone" type="text" class="form-control" placeholder="phone" (focus)="focus1=true" (blur)="focus1=false" >
+  </div>
+
+  <label>Roles</label>
+  <div  class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus1===true}">
+    <div class="input-group\
+    -prepend">
+      <span class="input-group-text">
+          <i class="nc-icon nc-key-25"></i>
+      </span>
+    </div>
+      <input formControlName="roles" type="text" class="form-control" placeholder="phone" (focus)="focus1=true" (blur)="focus1=false" >
+  </div>
+
+  <label>District</label>
+  <div  class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus1===true}">
+    <div class="input-group\
+    -prepend">
+      <span class="input-group-text">
+          <i class="nc-icon nc-key-25"></i>
+      </span>
+    </div>
+      <input formControlName="districts" type="text" class="form-control" placeholder="phone" (focus)="focus1=true" (blur)="focus1=false" >
+  </div>
+
+
+  <button class="btn btn-danger btn-block btn-round">Register</button>
+
+<div class="forgot">
+  <a href="#" class="btn btn-link btn-danger">Forgot password?</a>
+</div>
+</form>
